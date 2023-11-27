@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<title>GitForge Word Counter</title>
+	<meta name="description" content="Your favorite Word Counter, with a dark mode! Count the number of words, sentences, and paragraphs in your text instantly.">
+	<meta name="author" content="GitForge">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Person",
+			"name": "GitForge",
+			"url": "https://www.gitforge.in/"
+		}
+	</script>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#151515">
+	<meta name="msapplication-navbutton-color" content="#151515">
+	<meta name="msapplication-TileColor" content="#151515">
+	<meta name="theme-color" content="#151515">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>GitForge Word Counter</h1>
+		</header>
+		<p>
+			Your favorite Word Counter, with a dark mode!<br><br>
+
+			GitForge Word Counter is a free online tool to count the number of characters, words, and paragraphs in your text. GitForge Word Counter can also count the number of digits, spaces, and special characters. Make sure you have the required number of words for your essay or article by counting them instantly.<br><br>
+
+			Also, GitForge Word Counter has other themes in the settings, so check them out if you want a different look. Please bookmark this page to use GitForge Word Counter whenever you need.
+		</p>
+		<textarea id="input" spellcheck="false" maxlength="1000000" placeholder="The quick brown fox jumps over the lazy dog..." autofocus></textarea>
+		<div class="table">
+			<h5>Characters</h5>
+			<h5>Words</h5>
+			<h5>Sentences</h5>
+			<h5>Paragraphs</h5>
+			<output id="characters">-</output>
+			<output id="words">-</output>
+			<output id="sentences">-</output>
+			<output id="paragraphs">-</output>
+			<h5>Spaces</h5>
+			<h5>Letters</h5>
+			<h5>Digits</h5>
+			<h5>Special Characters</h5>
+			<output id="spaces">-</output>
+			<output id="letters">-</output>
+			<output id="digits">-</output>
+			<output id="specialcharacters">-</output>
+		</div>
+		<p>
+			Please note that although this calculator was designed to be as accurate as possible, it may not be perfect. No promises!
+		</p>
+		<p class="sharelabel"><b>Share</b><br><i class="fas fa-arrow-down"></i></p>
+		<footer>
+			<a href="https://www.gitforge.in/"><b>GitForge</b></a>
+			<div class="social">
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.gitforge.in/"><i class="fas fa-facebook-square"></i></a>
+				<a href="http://twitter.com/share?url=https://www.gitforge.in%2F&hashtags=charactercounter%2Cwordcounter&text=GitForge%20-%20Your%20favorite%20character%20counter%21%20%20Count%20the%20number%20of%20words%2C%20sentences%2C%20and%20paragraphs%20in%20your%20text%3A"><i class="fas fa-twitter-square"></i></a>
+				<a href="mailto:someone@yoursite.com&subject=GitForge%20-%20Word%20Counter&body=GitForge%20-%20Your%20favorite%20character%20counter%21%20%20Count%20the%20number%20of%20words%2C%20sentences%2C%20and%20paragraphs%20in%20your%20text%3A"><i class="fas fa-envelope-square"></i></a>
+			</div>
+			<a href="https://www.gitforge.in/" rel="author"><b>All Right's Reserved</b></a>
+		</footer>
+	</div>
+
+	<a href="#" id="settings"><b><i class="fas fa-gear"></i></b></a>
+	<div class="sidebar">
+		<h3>Options</h3>
+		<strong>Input</strong>
+		<section>
+			<input type="checkbox" id="savesettings">
+			<label for="savesettings">Remember settings</label><br>
+			<input type="checkbox" id="savetext" disabled>
+			<label for="savetext">Remember text from last time</label><br>
+			<input type="checkbox" id="maxchars">
+			<label for="maxchars">Allow more than 1,000,000 characters</label>
+		</section>
+		<strong>Theme</strong>
+		<section class="themes">
+			<p>
+				<input type="radio" name="theme" id="autotheme" value="Auto" checked>
+				<label for="autotheme">Auto</label>
+			</p>
+			<p>
+				<input type="radio" name="theme" id="blacktheme" value="Black" checked>
+				<label for="blacktheme">Black</label>
+			</p>
+			<p>
+				<input type="radio" name="theme" id="whitetheme" value="White">
+				<label for="whitetheme">White</label>
+			</p>
+			<p>
+				<input type="radio" name="theme" id="tealtheme" value="Teal">
+				<label for="tealtheme">Teal</label>
+			</p>
+			<p>
+				<input type="radio" name="theme" id="dusktheme" value="Dusk">
+				<label for="dusktheme">Dusk</label>
+			</p>
+		</section>
+		<strong>Info</strong>
+		<p>
+			Icons were provided by <a href="https://github.com/FortAwesome/Font-Awesome" rel="link"><strong>Font Awesome</strong></a> under the CC BY 4.0 License, SIL OFL 1.1 License, and MIT Licenses and packaged using <a href="https://icomoon.io/#docs" rel="link"><strong>IcoMoon</strong></a>. Please see <a href="https://github.com/jerboa88/Tally/tree/gh-pages/fonts/LICENSE.txt" rel="link"><strong>the license</strong></a> for more details.
+		</p>
+		<section class="padding"></section>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
